@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "376decoder", "376decoder\376decoder.vcxproj", "{461B76EB-56B4-46EA-A710-26CA730E4C6C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcxproj", "{C68FB49D-E92F-4D29-B7B6-CC2023525DD5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{461B76EB-56B4-46EA-A710-26CA730E4C6C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{461B76EB-56B4-46EA-A710-26CA730E4C6C}.Debug|Win32.Build.0 = Debug|Win32
+		{461B76EB-56B4-46EA-A710-26CA730E4C6C}.Release|Win32.ActiveCfg = Release|Win32
+		{461B76EB-56B4-46EA-A710-26CA730E4C6C}.Release|Win32.Build.0 = Release|Win32
+		{C68FB49D-E92F-4D29-B7B6-CC2023525DD5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C68FB49D-E92F-4D29-B7B6-CC2023525DD5}.Debug|Win32.Build.0 = Debug|Win32
+		{C68FB49D-E92F-4D29-B7B6-CC2023525DD5}.Release|Win32.ActiveCfg = Release|Win32
+		{C68FB49D-E92F-4D29-B7B6-CC2023525DD5}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
