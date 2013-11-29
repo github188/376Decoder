@@ -12,9 +12,9 @@
 *.la
 *.a
 
-#ºöÂÔwindowsÉú³ÉµÄËõÂÔÍ¼ÎÄ¼ş
+#å¿½ç•¥windowsç”Ÿæˆçš„ç¼©ç•¥å›¾æ–‡ä»¶
 Thunbs.db
-#ºöÂÔVisual StudioÉú³ÉÊ±µÄ²úÉúµÄÎÄ¼ş
+#å¿½ç•¥Visual Studioç”Ÿæˆæ—¶çš„äº§ç”Ÿçš„æ–‡ä»¶
 *.obj
 *.exe
 *.pdb
@@ -39,3 +39,8 @@ Thunbs.db
 obj/
 [Rr]elease*/
 _ReSharper*/
+
+#ignore thumbnails created by windows
+Thumbs.db
+#Ignore files build by Visual Studio
+[Tt]est[Rr]esult*
