@@ -1,5 +1,6 @@
 #include "afx.h"
-#include "string.h"
+#include <sstream>
+#include <string>
 #include <regex>
 #include "DateFrameDefine.h"
 
@@ -45,13 +46,16 @@ void MsgFrame_3762::StringToHex()
 {
 	int MsgLen = msg.GetLength();
 	int i,j;
-	regex leaglchar("[A-Fa-f0-9]{2}");
-	cmatch result;
-	regex_match(msg, result, leaglchar);
-	hexmsg = new BYTE[MsgLen];
+	string msg_s = msg;
+	regex ilegalchar("[^A-Fa-f0-9]+");
+	string sparator = " ";
+	msg_s = regex_replace(msg_s, ilegalchar, sparator);
+
+	hexmsg = new BYTE[(MsgLen + 1) / 3];
+
 	for(i = 0, j = 0; i < MsgLen; i++, j++)
 	{
-		if(regex_match(msg[i]) && (msg[i + 1] != ' '))
+		if((msg[i] != ' ') && (msg[i + 1] != ' '))
 		{
 			hexmsg[j] = (ConvHEXChar(msg[i]) << 4) + (ConvHEXChar(msg[i+1]));
 			i += 2;
